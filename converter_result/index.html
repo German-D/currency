@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+    <script src="./js.js" defer></script>
+
+    <title>Конвертер</title>
+  </head>
+  <body>
+    <main class="main">
+        <div class="converter__container">
+            <div class="converter__block">
+                <h1 class="converter__block-title">Конвертер копеек в рубли</h1>
+                <div class="converter__block-inputs converter-inputs">
+                    <div class="converter-inputs__item inputs-item">
+                        <p class="inputs-item__desc">У меня есть</p>
+                        <p class="inputs-item__value coins">коп</p>
+                        <label for="input" class="inputs-item__input">
+                            <input type="text" size="6" id="input" placeholder="0"/>
+                            <p>1 КОП = 0,01 РУБ</p>
+                        </label>
+                    </div>
+
+                    <div class="converter-inputs__arrow">
+                        <img src="./arrow.svg" alt="arrow" id="button"/>
+                    </div>
+
+                    <div class="converter-inputs__item inputs-item">
+                        <p class="inputs-item__desc">Сколько это будет</p>
+                        <p class="inputs-item__value rub">руб</p>
+                        <div class="inputs-item__input">
+                            <h2 id="rub">0</h2>
+                            <p>1 РУБ = 100 КОП</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
